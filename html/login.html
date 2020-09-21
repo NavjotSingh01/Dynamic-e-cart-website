@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="eva ">
+    <meta name="discripion" content="This is a a login page, type something and enter into main my account">
+    <meta name="keywords" content="e-commerce,login, my account, shoes, nike, puma, adidas, home">
+    <title>MaRs LaBs|| LOG IN </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <style>
+        header {
+            background-image: url('/media/images/signin.jpg');
+        }
+    </style>
+    <link rel="stylesheet" href="../css/login.css">
+
+    <link rel="stylesheet" href="/css/animationsCss/animate.css">
+</head>
+
+<body>
+
+
+    <section class="createaccount">
+        <div class="accountcontainer">
+            <div class="accountrow">
+
+                <div class="doubleupdown" style="width: 50%;">
+
+                    <h1>Mars Labs</h1>
+
+                </div>
+
+
+                <div class="doubleup" style="width:50%; background-color: whitesmoke;">
+
+                    <div class="contsign">
+                        <div class="rowsign">
+
+                            <div class="colsign">
+
+                                <h3 class="tu-03">Log In</h3>
+                                <form id="loginForm" action="profile/profile.html" method="get">
+                                    <div class="form-group">
+                                        <label for="username">username</label>
+                                        <input type="text" class="form-control" id="login-username" required placeholder="Enter Your Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Password">Password</label>
+                                        <input type="password" class="form-control" id="loginPassword" required placeholder="Enter Password">
+                                    </div>
+                                    <div class="rowxad">
+                                        <div class="colsmq" style="width: 50%;">
+                                            <div class="checkbox-sign">
+                                                <input id="remember-me" name="remember" class="check-input" type="checkbox">
+                                                <label class="label3" for="remember-me">Remember Me</label>
+                                            </div>
+                                        </div>
+                                        <div class="colsmw" style="width: 50%;"><a class="btn-link" href="{% url 'signup' %} ">Sign Up </a>
+                                        </div>
+                                    </div>
+                                    <button class="btnlogin" type="submit">Login</button>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
